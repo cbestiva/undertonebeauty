@@ -1,0 +1,133 @@
+#site_navbar.navbar.navbar-default {
+  background-color: black;
+}
+
+.homepage_header {
+  text-align: center;
+}
+
+.undertonespic {
+  display: block;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid #000000;
+}
+
+@media(max-width: 480px) {
+  h2.homepage_header {
+    font-size: 18px;
+  }
+  .brown {
+    /*border: solid black 1px;*/
+    margin-left: 5px;
+    padding: 5px;
+  }
+  .medium {
+    /*border: solid black 1px;*/
+    margin-left: 0px;
+    padding: 5px;
+  }
+  .olive {
+    /*border: solid black 1px;*/
+    margin-left: 0px;
+    padding: 5px;
+  }
+  .light {
+    /*border: solid black 1px;*/
+    margin-left: 0px;
+    padding: 5px;
+  }
+}
+
+@media(min-width: 481px) and (max-width: 767px) {
+  .brown {
+    /*border: solid black 1px;*/
+    margin-left: 50px;
+    padding: 10px;
+  }
+  .medium {
+    /*border: solid black 1px;*/
+    margin-left: 50px;
+    padding: 10px;
+  }
+  .olive {
+    /*border: solid black 1px;*/
+    margin-left: 50px;
+    padding: 10px;
+  }
+  .light {
+    /*border: solid black 1px;*/
+    margin-left: 50px;
+    padding: 10px;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+  .brown {
+    /*border: solid black 1px;*/
+    margin-left: 50px;
+    padding: 10px;
+  }
+  .medium {
+    /*border: solid black 1px;*/
+    margin-left: 50px;
+    padding: 10px;
+  }
+  .olive {
+    /*border: solid black 1px;*/
+    margin-left: 50px;
+    padding: 10px;
+  }
+  .light {
+    /*border: solid black 1px;*/
+    margin-left: 70px;
+    padding: 10px;
+  }
+}
+
+@media(min-width:992px) and (max-width: 1199px) {
+ .brown{
+    /*border: solid black 1px;*/
+    margin-left: 100px;
+    padding: 10px;
+  }
+  .medium {
+    /*border: solid black 1px;*/
+    margin-left: 100px;
+    padding: 10px;
+  }
+  .olive {
+    /*border: solid black 1px;*/
+    margin-left: 100px;
+    padding: 10px;
+  }
+  .light {
+    /*border: solid black 1px;*/
+    margin-left: 100px;
+    padding: 10px;
+  }
+}
+
+@media only screen and (min-width:1200px){
+  .brown{
+    /*border: solid black 1px;*/
+    margin-left: 200px;
+    padding: 10px;
+  }
+  .medium {
+    /*border: solid black 1px;*/
+    margin-left: 100px;
+    padding: 10px;
+  }
+  .olive {
+    /*border: solid black 1px;*/
+    margin-left: 100px;
+    padding: 10px;
+  }
+  .light {
+    /*border: solid black 1px;*/
+    margin-left: 100px;
+    padding: 10px;
+  }
+}
