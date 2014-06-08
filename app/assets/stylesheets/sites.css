@@ -14,6 +14,7 @@
   border: 5px solid #000000;
 }
 
+/*landscape phones and smaller*/
 @media(max-width: 480px) {
   h2.homepage_header {
     font-size: 18px;
@@ -40,6 +41,7 @@
   }
 }
 
+/*landscape phones to portrait tablets*/
 @media(min-width: 481px) and (max-width: 767px) {
   .brown {
     /*border: solid black 1px;*/
@@ -63,6 +65,7 @@
   }
 }
 
+/*portrait tablets and small desktops*/
 @media(min-width: 768px) and (max-width: 991px){
   .brown {
     /*border: solid black 1px;*/
@@ -86,6 +89,7 @@
   }
 }
 
+/*portrait tablets and medium desktops*/
 @media(min-width:992px) and (max-width: 1199px) {
  .brown{
     /*border: solid black 1px;*/
@@ -109,6 +113,7 @@
   }
 }
 
+/*large desktops and laptops*/
 @media only screen and (min-width:1200px){
   .brown{
     /*border: solid black 1px;*/
