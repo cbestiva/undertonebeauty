@@ -168,9 +168,13 @@
   font-size: 20px;
 }
 
-/*forgot password page*/
+/*sign up and forgot password pages*/
 @media(max-width: 480px) {
   h2 {
     font-size: 18px;
   }
+}
+
+#error_explanation li {
+  color: red;
 }
