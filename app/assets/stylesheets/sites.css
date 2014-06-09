@@ -114,7 +114,7 @@
 }
 
 /*large desktops and laptops*/
-@media only screen and (min-width:1200px){
+@media only screen and (min-width:1200px) {
   .brown{
     /*border: solid black 1px;*/
     margin-left: 200px;
@@ -135,4 +135,30 @@
     margin-left: 100px;
     padding: 10px;
   }
+}
+
+/*signin page*/
+.outter_signin_container {
+  background-image: url(/assets/signinpic.png);
+  margin-top: -70px;
+  height: 720px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.signin_paragraph {
+  margin-top: 70px;
+}
+.signin_page {
+  text-align: center;
+}
+
+
+@media(max-width: 480px) {
+  p.signin_paragraph {
+    font-size: 14px;
+  }
+}
+.signin_paragraph {
+  font-size: 20px;
 }
