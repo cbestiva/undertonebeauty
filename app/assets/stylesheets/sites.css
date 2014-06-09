@@ -158,6 +158,7 @@
   padding: 0px;
   color: red;
 }
+
 @media(max-width: 480px) {
   p.signin_paragraph {
     font-size: 14px;
@@ -165,4 +166,11 @@
 }
 .signin_paragraph {
   font-size: 20px;
+}
+
+/*forgot password page*/
+@media(max-width: 480px) {
+  h2 {
+    font-size: 18px;
+  }
 }
