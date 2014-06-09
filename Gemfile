@@ -9,6 +9,8 @@ gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'
 
+gem 'devise'
+
 group :test, :development do
   gem 'rspec-rails'
   gem 'pry'
