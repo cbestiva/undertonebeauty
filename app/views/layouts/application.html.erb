@@ -5,14 +5,18 @@
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+  <script type="text/javascript">
+    $(function () {
+      $("#sign_up").modal({show:false});
+    }
+  </script>
 </head>
 <body>
 
   <%= render partial: "sites/navbar" %>
-<!--   <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p> -->
   <%= yield %>
-
+  <!-- <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p> -->
 
 </body>
 </html>

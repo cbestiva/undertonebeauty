@@ -149,11 +149,15 @@
 .signin_paragraph {
   margin-top: 70px;
 }
+
 .signin_page {
   text-align: center;
 }
 
-
+.alert {
+  padding: 0px;
+  color: red;
+}
 @media(max-width: 480px) {
   p.signin_paragraph {
     font-size: 14px;

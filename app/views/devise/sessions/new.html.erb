@@ -5,7 +5,8 @@
     But when you do, why not share it with the world?
     Sign in to keep track of the products you love that work for you, and share them with others!
   </p>
-
+  <!-- <div class="notice"><%= notice %></div> -->
+  <div class="alert"><%= alert %></div>
   <h2>Sign in</h2>
 
   <%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
@@ -20,8 +21,11 @@
     <% end -%>
 
     <div><%= f.submit "Sign in" %></div>
-  <% end %>
+  <% end %><br />
 
-  <%= render "devise/shared/links" %>
+  <%#= render "devise/shared/links" %>
+  <%= render "sites/sign_up_modal" %>
+  <%= link_to "Sign up", "#sign_up", "data-toggle" => "modal", "data-target" => "#sign_up", :class => 'btn btn-xs btn-success' %><br />
+  <%= link_to "Forgot your password?", new_password_path(resource_name) %>
 </div>
 </div>
