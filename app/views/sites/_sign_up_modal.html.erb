@@ -10,12 +10,13 @@
         <%= devise_error_messages! %>
 
         <div><%= f.label :username %><br />
-          <%= f.text_field :username %></div>
+        <%= f.text_field :username %></div>
 
         <div><%= f.label :email %><br />
         <%= f.email_field :email, :autofocus => true %></div>
 
-        <div></div>
+        <div><%= f.label :skintone %>
+        <%= f.collection_select :skintone_id, Skintone.all, :id, :color, :prompt => "Select One" %></div>
 
         <div><%= f.label :password %><br />
         <%= f.password_field :password %></div>
