@@ -6,4 +6,5 @@ class User < ActiveRecord::Base
 
   belongs_to :skintone
   belongs_to :eyecolor
+
 end
