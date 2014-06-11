@@ -15,8 +15,11 @@
         <div><%= f.label :email %><br />
         <%= f.email_field :email, :autofocus => true %></div>
 
-        <div><%= f.label :skintone %>
+        <div class="skintone_div"><%= f.label :skintone %>
         <%= f.collection_select :skintone_id, Skintone.all, :id, :color, :prompt => "Select One" %></div>
+
+        <div class="eyecolor_div"><%= f.label :eyecolor %>
+          <%= f.collection_select :eyecolor_id, Eyecolor.all, :id, :color, :prompt => "Select One" %></div>
 
         <div><%= f.label :password %><br />
         <%= f.password_field :password %></div>
