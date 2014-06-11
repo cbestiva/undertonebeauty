@@ -1,6 +1,56 @@
 <div class="container">
   <!-- <p class="notice"><%#= notice %></p> -->
-  <p>Username: <%= current_user.username %></p>
-  <p>Skintone: <%= current_user.skintone.color %></p>
-  <p>Eyecolor: <%= current_user.eyecolor.color %></p>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="row">
+        <div class="col-xs-5">Picture Here</div>
+        <div class="col-xs-7">
+          <p>Username: <%= current_user.username %></p>
+          <p>Skintone: <%= current_user.skintone.color %></p>
+          <p>Eyecolor: <%= current_user.eyecolor.color %></p><br />
+        </div>
+      </div>
+      <p>Found a great new product? Add it to your favorites and share!</p>
+      <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseAdd">
+                + Add a product
+              </a>
+            </h4>
+          </div>
+          <div id="collapseAdd" class="panel-collapse collapse">
+            <div class="panel-body">
+              form for Product
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-8">
+      <h4>My Favorites:</h4>
+      <ul class="nav nav-tabs" id="myProductsTab">
+        <li class="active"><a href="#skincare">Skincare Products</a></li>
+        <li><a href="#concealer">Concealer</a></li>
+        <li><a href="#foundation">Foundation/BB Cream</a></li>
+        <li><a href="#eyeliner">Eyeliner</a></li>
+        <li><a href="#eyeshadow">Eyeshadow</a></li>
+        <li><a href="#brow">Brow</a></li>
+        <li><a href="#blush">Blush/Bronzer</a></li>
+        <li><a href="#lipstick">Lipstick/Gloss</a></li>
+      </ul>
+
+      <div class="tab-content">
+        <div class="tab-pane active" id="skincare">Products</div>
+        <div class="tab-pane" id="concealer">Concealers</div>
+        <div class="tab-pane" id="foundation">Foundations</div>
+        <div class="tab-pane" id="eyeliner">Eyeliners</div>
+        <div class="tab-pane" id="eyeshadow">Eyeshadows</div>
+        <div class="tab-pane" id="brow">Brows</div>
+        <div class="tab-pane" id="blush">Blushes</div>
+        <div class="tab-pane" id="lipstick">Lipsticks</div>
+      </div>
+    </div>
+  </div>
 </div>
