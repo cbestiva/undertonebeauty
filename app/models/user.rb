@@ -6,5 +6,7 @@ class User < ActiveRecord::Base
 
   belongs_to :skintone
   belongs_to :eyecolor
+  has_many :users_products
+  has_many :products, through: :users_products
 
 end
