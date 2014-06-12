@@ -22,7 +22,20 @@
           </div>
           <div id="collapseAdd" class="panel-collapse collapse">
             <div class="panel-body">
-              form for Product
+              <%= form_for @product do |f| %>
+                <div>
+                  <%= f.label :name %>
+                  <%= f.text_field :name %>
+                </div>
+                <div>
+                  <%= f.label "Category" %>
+                  
+                </div>
+                <div>
+                  <%= f.label "Review/Comment" %>
+                  <%= f.text_area :review %>
+                </div>
+              <% end %>
             </div>
           </div>
         </div>
