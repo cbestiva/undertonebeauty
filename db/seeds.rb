@@ -20,3 +20,13 @@ eyecolors << Eyecolor.create(color: "Blue")
 eyecolors << Eyecolor.create(color: "Green")
 eyecolors << Eyecolor.create(color: "Hazel")
 eyecolors << Eyecolor.create(color: "Brown")
+
+categories = []
+categories << Category.create(name: "Skincare Product")
+categories << Category.create(name: "Concealer")
+categories << Category.create(name: "Foundation/BB Cream")
+categories << Category.create(name: "Eyeliner")
+categories << Category.create(name: "Eyeshadow")
+categories << Category.create(name: "Brow")
+categories << Category.create(name: "Blush/Bronzer")
+categories << Category.create(name: "Lipstick/Gloss")
