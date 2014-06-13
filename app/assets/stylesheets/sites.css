@@ -196,3 +196,11 @@
   margin-top: 20px;
   float: left;
 }
+
+/*skintone pages*/
+.user_box {
+  border: solid;
+  width: 250px;
+  float: left;
+  margin: 10px;
+}

@@ -1,14 +1,14 @@
 <div class="container">
-  <h2>Users with fair-medium skintones:</h2>
-  <% for user in @users do %>
-    <% if user.skintone_id == 2 || user.skintone_id == 3 %>
+  <h2>Users with olive-brown skintones:</h2>
+  <% for user in @users do %>  
+    <% if user.skintone_id == 1 || user.skintone_id == 2 %>
       <div class="user_box">
         <p>
           Username: <a href="<%= user.username %>/<%= user.id %>"><%= user.username %></a><br />
           Skintone: <%= user.skintone.color %><br />
           Eyecolor: <%= user.eyecolor.color %>
         </p>
-      </div> 
+      </div>  
     <% end %>   
   <% end %>
 </div>
