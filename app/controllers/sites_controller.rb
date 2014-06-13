@@ -3,18 +3,18 @@ class SitesController < ApplicationController
   end
 
   def browndark
-    @users = User.all
+    @users = User.find(:all, order: :username)
   end
 
   def fairmedium
-    @users = User.all
+    @users = User.find(:all, order: :username)
   end
 
   def olivebrown
-    @users = User.all
+    @users = User.find(:all, order: :username)
   end
 
   def lightfair
-    @users = User.all
+    @users = User.find(:all, order: :username)
   end
 end
