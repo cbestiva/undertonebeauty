@@ -1,0 +1,9 @@
+<div class="container">
+  <% for user in @users do %>
+    <% if user.skintone_id == 5 || user.skintone == 6 %>
+      <%= user.username %>
+      <%= user.skintone.color %>
+      <%= user.eyecolor.color %>
+    <% end %>
+  <% end %>
+</div>
