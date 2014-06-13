@@ -8,4 +8,5 @@ Undertonebeauty::Application.routes.draw do
   get "users/:username" => "users#show", as: "profile"
   get "undertonebeauty/brown-dark" => "sites#browndark"
   get "undertonebeauty/fair-medium" => "sites#fairmedium"
+  get "undertonebeauty/:username/:id" => "users#preview"
 end

@@ -12,4 +12,8 @@ class UsersController < ApplicationController
     @user = User.find_by_username(params[:id])
     @product = Product.new
   end
+
+  def preview
+    @user = User.find(params[:id])
+  end
 end
