@@ -4,7 +4,8 @@ Undertonebeauty::Application.routes.draw do
   root to: "sites#index"
 
   get "/undertonebeauty", to: "sites#index", as: :home_url
-  get "users/show/:id" => "users#show", as: "profile"
-  get "undertonebeauty/brown-black" => "sites#brownblack"
+  get "users", to: "users#index"
+  get "users/:username" => "users#show", as: "profile"
+  get "undertonebeauty/brown-dark" => "sites#browndark"
   get "undertonebeauty/fair-medium" => "sites#fairmedium"
 end
