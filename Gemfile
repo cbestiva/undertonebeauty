@@ -10,6 +10,8 @@ gem 'pg'
 gem 'sass-rails', '~> 4.0.2'
 
 gem 'devise'
+gem 'carrierwave'
+gem 'cloudinary'
 
 group :test, :development do
   gem 'rspec-rails'
