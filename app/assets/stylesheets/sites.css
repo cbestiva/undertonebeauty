@@ -182,3 +182,17 @@
 .skintone_div, .eyecolor_div {
   margin-top: 7px;
 }
+
+/*user profile page*/
+.tab-content {
+  height: 300px;
+}
+.product_container {
+  width: 250px;
+  height: 250px;
+  border: solid;
+  padding: 5px;
+  margin-left: 25px;
+  margin-top: 20px;
+  float: left;
+}
