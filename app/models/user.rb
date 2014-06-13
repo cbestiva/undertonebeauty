@@ -9,4 +9,7 @@ class User < ActiveRecord::Base
   has_many :users_products
   has_many :products, through: :users_products
 
+  def to_param
+    username
+  end
 end
