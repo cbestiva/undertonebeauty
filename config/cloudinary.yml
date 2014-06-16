@@ -1,10 +1,10 @@
-development:
-  cloud_name: ENV["MY_CLOUD_NAME"]
-  api_key: ENV["MY_API_KEY"]
-  api_secret: ENV["MY_SECRET_KEY"]
+# development:
+#   cloud_name: ""
+#   api_key: ""
+#   api_secret: ""
 
 
-production:
-  cloud_name: ENV["MY_CLOUD_NAME"]
-  api_key: ENV["MY_API_KEY"]
-  api_secret: ENV["MY_SECRET_KEY"]
+# production:
+#   cloud_name: ""
+#   api_key: ""
+#   api_secret: ""

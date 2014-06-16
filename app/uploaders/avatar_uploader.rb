@@ -2,6 +2,7 @@
 
 class AvatarUploader < CarrierWave::Uploader::Base
 
+  include Cloudinary::CarrierWave
   # Include RMagick or MiniMagick support:
   # include CarrierWave::RMagick
   # include CarrierWave::MiniMagick
@@ -32,9 +33,25 @@ class AvatarUploader < CarrierWave::Uploader::Base
   # end
 
   # Create different versions of your uploaded files:
-  # version :thumb do
-  #   process :resize_to_fit => [50, 50]
-  # end
+  version :display do
+    process :eager => true
+    process :resize_to_fill => [150, 150, :north]
+  end
+
+  version :thumb do
+    process :eager => true
+    process :resize_to_fit => [100, 100]
+  end
+
+  version :profile_face do
+    cloudinary_transformation :radius => :max, 
+      :width => 150, :height => 150, :crop => :thumb, :gravity => :face
+  end
+
+  version :circle_face do
+    cloudinary_transformation :radius => :max, :width => 100, :height => 100,
+      :crop => :thumb, :gravity => :face
+  end
 
   # Add a white list of extensions which are allowed to be uploaded.
   # For images you might use something like this:

@@ -15,6 +15,9 @@
         <div><%= f.label :email %><br />
         <%= f.email_field :email, :autofocus => true %></div>
 
+        <div><%= f.label :avatar, "Profile Image" %></div>
+        <div id="modal_signup_avatar"><%= f.file_field :avatar %></div>
+
         <div class="skintone_div"><%= f.label :skintone %>
         <%= f.collection_select :skintone_id, Skintone.all, :id, :color, :prompt => "Select One" %></div>
 
