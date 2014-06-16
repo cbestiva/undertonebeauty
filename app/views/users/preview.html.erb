@@ -30,7 +30,7 @@
 
       <div class="tab-content" style="overflow-y:auto;">
           
-          <div class="tab-pane active" id="skincare">
+          <div class="tab-pane active col-xs-10 col-xs-offset-1" id="skincare">
             <% for product in @user.products do %>
               <% if product.category_id == 1 %>
                 <p>Name: <%= product.name %><br />
@@ -38,7 +38,7 @@
               <% end %>
             <% end %>
           </div>
-          <div class="tab-pane" id="concealer">
+          <div class="tab-pane col-xs-10 col-xs-offset-1" id="concealer">
             <% for product in @user.products do %>
               <% if product.category_id == 2 %>
                 <p>Name: <%= product.name %><br />
@@ -46,7 +46,7 @@
               <% end %>
             <% end %>
           </div>
-          <div class="tab-pane" id="foundation">
+          <div class="tab-pane col-xs-10 col-xs-offset-1" id="foundation">
             <% for product in @user.products do %>
               <% if product.category_id == 3 %>
                 <p>Name: <%= product.name %><br />
@@ -54,7 +54,7 @@
               <% end %>
             <% end %>
           </div>
-          <div class="tab-pane" id="eyeliner">
+          <div class="tab-pane col-xs-10 col-xs-offset-1" id="eyeliner">
             <% for product in @user.products do %>
               <% if product.category_id == 4 %>
                 <p>Name: <%= product.name %><br />
@@ -62,7 +62,7 @@
               <% end %>
             <% end %>
           </div>
-          <div class="tab-pane" id="eyeshadow">
+          <div class="tab-pane col-xs-10 col-xs-offset-1" id="eyeshadow">
             <% for product in @user.products do %>
               <% if product.category_id == 5 %>
                 <p>Name: <%= product.name %><br />
@@ -70,7 +70,7 @@
               <% end %>
             <% end %>
           </div>
-          <div class="tab-pane" id="brow">
+          <div class="tab-pane col-xs-10 col-xs-offset-1" id="brow">
             <% for product in @user.products do %>
               <% if product.category_id == 6 %>
                 <p>Name: <%= product.name %><br />
@@ -78,7 +78,7 @@
               <% end %>
             <% end %>
           </div>
-          <div class="tab-pane" id="blush">
+          <div class="tab-pane col-xs-10 col-xs-offset-1" id="blush">
             <% for product in @user.products do %>
               <% if product.category_id == 7 %>
                 <p>Name: <%= product.name %><br />

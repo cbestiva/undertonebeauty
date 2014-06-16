@@ -49,7 +49,7 @@ class AvatarUploader < CarrierWave::Uploader::Base
   end
 
   version :circle_face do
-    cloudinary_transformation :radius => :max, :width => 100, :height => 100,
+    cloudinary_transformation :radius => :max, :width => 150, :height => 150,
       :crop => :thumb, :gravity => :face
   end
 
