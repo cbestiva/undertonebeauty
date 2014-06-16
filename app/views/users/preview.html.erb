@@ -3,7 +3,11 @@
   <div class="row">
     <div class="col-md-4">
       <div class="row">
-        <div class="col-xs-5">Picture Here</div>
+        <div class="col-xs-5">
+          <% unless @user.avatar_url.nil? %>
+            <img class="img-responsive" src="<%= current_user.avatar_url(:profile_face) %>" />
+          <% end %>
+        </div>
         <div class="col-xs-7">
           <p>Username: <%= @user.username %></p>
           <p>Skintone: <%= @user.skintone.color %></p>

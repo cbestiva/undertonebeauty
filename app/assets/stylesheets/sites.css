@@ -179,6 +179,13 @@
   color: red;
 }
 
+#modal_signup_avatar #user_avatar {
+  /*border: solid;*/
+  margin: auto;
+  padding-left: 95px;
+}
+
+
 .skintone_div, .eyecolor_div {
   margin-top: 7px;
 }
@@ -199,8 +206,9 @@
 
 /*skintone pages*/
 .user_box {
-  border: solid;
-  width: 250px;
+  /*border: solid;*/
+  width: 200px;
   float: left;
-  margin: 10px;
+  margin: 5px;
+  text-align: center;
 }
