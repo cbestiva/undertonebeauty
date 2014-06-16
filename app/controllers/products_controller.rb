@@ -10,7 +10,7 @@ class ProductsController < ApplicationController
   end
 
   def create
-    new_product = params.require(:product).permit(:name, :category_id, :review)
+    new_product = params.require(:product).permit(:name, :category_id, :review, :image)
     @product = current_user.products.create(new_product)
 
     respond_to do |f|
