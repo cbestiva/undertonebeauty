@@ -220,7 +220,7 @@ img.img_container {
 
 /*skintone pages*/
 .user_box {
-  border: solid;
+  /*border: solid;*/
   width: 200px;
   float: left;
   margin: 5px;

@@ -16,4 +16,9 @@ class UsersController < ApplicationController
   def preview
     @user = User.find(params[:id])
   end
+
+  def edit
+    @user = User.find(params[:id])
+    # @user.update_without_password(devise_parameter_sanitizer.sanitize(:account_update))
+  end
 end
