@@ -27,24 +27,7 @@
           </div>
           <div id="collapseAdd" class="panel-collapse collapse">
             <div class="panel-body">
-              <%= form_for @product do |f| %>
-                <div>
-                  <%= f.file_field :image %>
-                </div>
-                <div>
-                  <%= f.label :name %><br />
-                  <%= f.text_field :name, :class => "form-control" %>
-                </div>
-                <div>
-                  <%= f.label "Category" %>
-                  <%= f.collection_select :category_id, Category.all, :id, :name, :prompt => "Select One" %>
-                </div>
-                <div>
-                  <%= f.label "Review/Comment" %><br />
-                  <%= f.text_area :review, :class => "form-control" %>
-                </div><br />
-                <%= f.submit %>
-              <% end %>
+              <%= render :partial => "products/form" %>
             </div>
           </div>
         </div>
@@ -164,6 +147,11 @@
                   <div class="product_content">
                     <p>Name: <%= product.name %><br />
                     Review/Comment: <%= product.review %></p>
+                  </div>
+                  <div id="edit_button">
+                    <a href="/products/<%= product.id %>/edit">Edit</a>
+                    <%#= render "products/edit_product_modal" %>
+                    <!-- <a href="<%#= edit_product_path(product) %> #edit_product" data-toggle="modal" data-target="#edit_product">Edit</a> -->
                   </div>
                 </div>
               <% end %>

@@ -203,8 +203,8 @@ img.img_container {
 }
 
 .product_container {
-  width: 250px;
-  height: 300px;
+  width: 260px;
+  height: 320px;
   border: solid;
   padding: 5px;
   margin-left: 25px;
@@ -216,6 +216,23 @@ img.img_container {
 
 .product_content {
   margin-top: 10px;
+}
+
+#edit_button {
+  text-align: right;
+}
+
+.product_modal_title {
+  text-align: center;
+}
+
+#product_modal_form {
+  text-align: left;
+}
+
+/*forms*/
+.btn_div {
+  text-align: right;
 }
 
 /*skintone pages*/

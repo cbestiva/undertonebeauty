@@ -22,4 +22,28 @@ class ProductsController < ApplicationController
   def show
     @products = current_user.products 
   end
+
+  def edit
+    @product = Product.find(params[:id])
+  end
+
+  def update
+    product = Product.find(params[:id])
+    product.update_attributes(params[:product].permit(:name, :category_id, :review, :image))
+
+    respond_to do |f|
+      f.html {redirect_to profile_url(current_user)}
+      f.json {render json: post, status: 200}
+    end
+  end
+
+  def destroy
+    product = Product.find(params[:id])
+    product.delete
+
+    respond_to do |f|
+      f.html {redirect_to profile_url(current_user)}
+      f.json {render json: post, status: 200}
+    end
+  end
 end
