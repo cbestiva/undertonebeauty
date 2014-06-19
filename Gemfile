@@ -12,6 +12,7 @@ gem 'sass-rails', '~> 4.0.2'
 gem 'devise'
 gem 'carrierwave'
 gem 'cloudinary'
+gem 'handlebars_assets'
 
 group :test, :development do
   gem 'rspec-rails'
