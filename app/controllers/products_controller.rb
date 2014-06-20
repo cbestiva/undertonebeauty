@@ -33,7 +33,7 @@ class ProductsController < ApplicationController
 
     respond_to do |f|
       f.html {redirect_to profile_url(current_user)}
-      f.json {render json: post, status: 200}
+      f.json {render json: product, status: 200}
     end
   end
 
@@ -43,7 +43,7 @@ class ProductsController < ApplicationController
 
     respond_to do |f|
       f.html {redirect_to profile_url(current_user)}
-      f.json {render json: post, status: 200}
+      f.json {render json: product, status: 200}
     end
   end
 end

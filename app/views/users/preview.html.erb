@@ -5,7 +5,7 @@
       <div class="row">
         <div class="col-xs-5">
           <% unless @user.avatar_url.nil? %>
-            <img class="img-responsive" src="<%= current_user.avatar_url(:profile_face) %>" />
+            <img class="img-responsive" src="<%= @user.avatar_url(:profile_face) %>" />
           <% end %>
         </div>
         <div class="col-xs-7">
@@ -17,7 +17,7 @@
     </div>
     <div class="col-md-8">
       <h4>My Favorites:</h4>
-      <ul class="nav nav-tabs" id="myProductsTab">
+      <ul class="nav nav-pills" id="myProductsTab">
         <li class="active"><a href="#skincare">Skincare Products</a></li>
         <li><a href="#concealer">Concealer</a></li>
         <li><a href="#foundation">Foundation/BB Cream</a></li>
@@ -126,9 +126,10 @@
               <% if product.category_id == 8 %>
                 <div class="product_container">
                   <img class="img_container" src="<%= product.image_url(:thumb) %>" />
-                  <div class="product_content">
-                    <p>Name: <%= product.name %><br />
-                    Review/Comment: <%= product.review %></p>
+                  <!-- <div class="product_content"> -->
+                  <div class="caption">
+                    <p><label>Name:</label> <%= product.name %><br />
+                    <label>Review/Comment:</label> <%= product.review %></p>
                   </div>
                 </div>
               <% end %>
