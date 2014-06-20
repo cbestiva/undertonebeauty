@@ -24,23 +24,26 @@ function filterUsers(){
     type: 'POST',
     data: { data: user}
   }).done(function(data) {
+    var skintone_data = data[0]
     $('.filtered_users').empty();
     if (skintone === "All") {
-      for (var i=0; i < data.length; i++) {
-        // $('.filtered_users').empty();
-        // users.push(data[i]);
-        var recordHTML = HandlebarsTemplates.user(data[i]);
-        $('.filtered_users').append(recordHTML);
+      for (var i=0; i < skintone_data.length; i++) {
+        $('.filtered_users').empty();
+        users.push(skintone_data[i]);
+        $(users).each(function(index, result) {
+          var recordHTML = HandlebarsTemplates.user(result);
+          $('.filtered_users').append(recordHTML);
+        });
       }    
     } else {
       // console.log(data);
-      for (var i=0; i < data.length; i++) {
+      for (var i=0; i < skintone_data.length; i++) {
         // console.log(data[i].skintone.color);
         // console.log(skintone);
-        if (data[i].skintone.color === skintone) {
-          console.log(data[i]);
+        if (skintone_data[i].skintone.color === skintone) {
+          console.log(skintone_data[i]);
           $('.filtered_users').empty();
-          users.push(data[i]);
+          users.push(skintone_data[i]);
           console.log(users);
           $(users).each(function(index, result) {
             var recordHTML = HandlebarsTemplates.user(result);
