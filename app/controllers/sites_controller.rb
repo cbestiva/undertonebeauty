@@ -54,4 +54,5 @@ class SitesController < ApplicationController
       f.json {render json: [@users, @products]}
     end
   end
+  
 end

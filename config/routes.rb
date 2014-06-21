@@ -13,5 +13,6 @@ Undertonebeauty::Application.routes.draw do
   get "undertonebeauty/olive-brown" => "sites#olivebrown"
   post "undertonebeauty/olive-brown" => "sites#olivebrown"
   get "undertonebeauty/light-fair" => "sites#lightfair"
+  post "undertonebeauty/light-fair" => "sites#lightfair"
   get "undertonebeauty/:username/:id" => "users#preview"
 end
