@@ -1,17 +1,37 @@
 <div class="container">
   <h2>Users with brown-dark skintones:</h2>
+   <div class="row">
+    <div class="form-group">
+      <label class="col-xs-2 col-sm-1">Display:</label>
+      <div class="col-xs-4 col-sm-2">
+        <div id="selected_skintones">
+        <select class="form-control" onchange="filterBrownDarkUsers()" id="selected_skin">
+          <option value="All">All</option>
+          <option value="Brown">Brown</option>
+          <option value="Dark">Dark</option>
+        </select>
+        </div>
+      </div>
+    </div>
+  </div>
   <% if @users == [] %>
     <p>There are currently no users with brown-dark skintones.</p>
   <% else %>
-    <% @users.each do |user| %>
-      <div class="user_box">
-        <p>
-          <a href="<%= user.username %>/<%= user.id %>"><%= image_tag user.avatar_url(:circle_face) %></a><br />
-          Username: <%= user.username %><br />
-          Skintone: <%= user.skintone.color %><br />
-          Eyecolor: <%= user.eyecolor.color %>
-        </p>
+    <div id="user_results">
+      <div class="filtered_users">
+        <% @users.each do |user| %>
+          <div class="user_box" >
+            <div id="user" data-skintone="<%= user.skintone.color %>">
+              <p>
+                <a href="<%= user.username %>/<%= user.id %>"><%= image_tag user.avatar_url(:circle_face) %></a><br />
+                Username: <%= user.username %><br />
+                Skintone: <%= user.skintone.color %><br />
+                Eyecolor: <%= user.eyecolor.color %>
+              </p>
+            </div>
+          </div>
+        <% end %> 
       </div>
-    <% end %>
+    </div>   
   <% end %>
-</div>
+</div> 

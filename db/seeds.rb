@@ -13,7 +13,7 @@ skintones << Skintone.create(color: "Fair")
 skintones << Skintone.create(color: "Medium")
 skintones << Skintone.create(color: "Olive")
 skintones << Skintone.create(color: "Brown")
-skintones << Skintone.create(color: "Black")
+skintones << Skintone.create(color: "Dark")
 
 eyecolors = []
 eyecolors << Eyecolor.create(color: "Blue")

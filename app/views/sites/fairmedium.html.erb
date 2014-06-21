@@ -5,7 +5,7 @@
       <label class="col-xs-2 col-sm-1">Display:</label>
       <div class="col-xs-4 col-sm-2">
         <div id="selected_skintones">
-        <select class="form-control" onchange="filterUsers()" id="selected_skin">
+        <select class="form-control" onchange="filterFairMedUsers()" id="selected_skin">
           <option value="All">All</option>
           <option value="Fair">Fair</option>
           <option value="Medium">Medium</option>
@@ -14,7 +14,7 @@
       </div>
     </div>
   </div>
-  <% if @users == nil %>
+  <% if @users == [] %>
     <p>There are currently no users with fair-medium skintones.</p>
   <% else %>
     <div id="user_results">
