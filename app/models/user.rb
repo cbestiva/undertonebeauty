@@ -6,8 +6,9 @@ class User < ActiveRecord::Base
 
   belongs_to :skintone
   belongs_to :eyecolor
-  has_many :users_products
-  has_many :products, through: :users_products
+  has_many :products
+  # has_many :users_products
+  # has_many :products, through: :users_products
   mount_uploader :avatar, AvatarUploader
 
   def to_param
