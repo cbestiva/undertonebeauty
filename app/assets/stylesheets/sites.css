@@ -185,7 +185,6 @@
   padding-left: 95px;
 }
 
-
 .skintone_div, .eyecolor_div {
   margin-top: 7px;
 }
@@ -250,4 +249,14 @@ img.img_container {
   /*margin: 1px;*/
   margin-top: 10px;
   text-align: center;
+}
+
+/*skintone pages - landscape phones and smaller*/
+@media(max-width: 480px) {
+  .product_filter {
+    margin-top: 10px;
+  }
+  #user_product_container {
+    margin-left: 75px;
+  }
 }

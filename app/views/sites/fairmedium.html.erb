@@ -1,7 +1,42 @@
 <div class="container">
   <h2>Users with fair-medium skintones:</h2>
   <div class="row">
-    <div class="form-group">
+    <label class="col-xs-2 col-sm-1">Display:</label>
+    <div class="btn-group col-xs-8 col-sm-3 col-md-2">
+      <button type="button" class="btn btn-default" id="usersButton">Users</button>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+          Filter <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" id="selectedSkintone">
+          <li><a href="#">Fair & Medium</a></li>
+          <li><a href="#">Fair</a></li>
+          <li><a href="#">Medium</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="btn-group col-xs-8 col-xs-offset-2 col-sm-3 col-sm-offset-1 col-md-3 product_filter">
+      <button type="button" class="btn btn-default" id="productsButton">Products</button>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+          Filter <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" id="selectedProduct">
+          <li><a href="#">All</a></li>
+          <li><a href="#">Skincare</a></li>
+          <li><a href="#">Concealer</a></li>
+          <li><a href="#">Foundation/BB Cream</a></li>
+          <li><a href="#">Eyeliner</a></li>
+          <li><a href="#">Eyeshadow</a></li>
+          <li><a href="#">Brow</a></li>
+          <li><a href="#">Blush/Bronzer</a></li>
+          <li><a href="#">Lipstick/Gloss</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- <div class="form-group">
       <label class="col-xs-2 col-sm-1">Display:</label>
       <div class="col-xs-4 col-sm-2">
         <div id="selected_skintones">
@@ -12,25 +47,27 @@
         </select>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
   <% if @users == [] %>
     <p>There are currently no users with fair-medium skintones.</p>
   <% else %>
     <div id="user_results">
-      <div class="filtered_users">
-        <% @users.each do |user| %>
-          <div class="user_box" >
-            <div id="user" data-skintone="<%= user.skintone.color %>">
-              <p>
-                <a href="<%= user.username %>/<%= user.id %>"><%= image_tag user.avatar_url(:circle_face) %></a><br />
-                Username: <%= user.username %><br />
-                Skintone: <%= user.skintone.color %><br />
-                Eyecolor: <%= user.eyecolor.color %>
-              </p>
+      <div class="row">
+        <div class="filtered_users col-xs-12">
+          <% @users.each do |user| %>
+            <div class="user_box" >
+              <div id="user" data-skintone="<%= user.skintone.color %>">
+                <p>
+                  <a href="<%= user.username %>/<%= user.id %>"><%= image_tag user.avatar_url(:circle_face) %></a><br />
+                  Username: <%= user.username %><br />
+                  Skintone: <%= user.skintone.color %><br />
+                  Eyecolor: <%= user.eyecolor.color %>
+                </p>
+              </div>
             </div>
-          </div>
-        <% end %> 
+          <% end %> 
+        </div>
       </div>
     </div>   
   <% end %>

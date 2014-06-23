@@ -53,6 +53,11 @@ class AvatarUploader < CarrierWave::Uploader::Base
       :crop => :thumb, :gravity => :face
   end
 
+  version :circle_face_thumb do
+    cloudinary_transformation :radius => :max, :width => 50, :height => 50,
+      :crop => :thumb, :gravity => :face    
+  end
+
   # Add a white list of extensions which are allowed to be uploaded.
   # For images you might use something like this:
   # def extension_white_list
