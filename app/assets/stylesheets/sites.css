@@ -189,7 +189,7 @@
   margin-top: 7px;
 }
 
-/*user profile page*/
+/*user profile page and preview page*/
 .tab-content {
   height: 500px;
   margin-bottom: 20px;
@@ -217,8 +217,16 @@ img.img_container {
   color: white;*/
 }
 
-.product_content {
+.product_content_users_page {
   margin-top: 10px;
+  height: 110px;
+  overflow-y: auto; 
+}
+
+.product_content_preview_page {
+  margin-top: 10px;
+  height: 130px;
+  overflow-y: auto;
 }
 
 #edit_button {
