@@ -192,6 +192,7 @@
 /*user profile page*/
 .tab-content {
   height: 500px;
+  margin-bottom: 20px;
 }
 
 img.img_container {
@@ -203,7 +204,7 @@ img.img_container {
 
 .product_container {
   width: 260px;
-  height: 320px;
+  height: 350px;
   border: 1px solid #ddd;
   border-radius: 4px;
   padding: 5px;

@@ -219,8 +219,8 @@ var initialize = function () {
               var recordHTML = HandlebarsTemplates.product(result);
               $('.filtered_users').append(recordHTML);  
             });                      
-          } else if (category === "Eyeliner") {
-            $('.filtered_users').empty().append("<br /><p>No eyeliner products found.</p>");
+          } else if (category === "Eyeliner & Mascara") {
+            $('.filtered_users').empty().append("<br /><p>No eyeliner or mascara products found.</p>");
             for (var i=0; i < product_data.length; i++) {
               if (product_data[i].category_id === 4) {
                 eyeliner_products.push(product_data[i])
@@ -543,8 +543,8 @@ var initialize = function () {
               var recordHTML = HandlebarsTemplates.product(result);
               $('.filtered_users').append(recordHTML);  
             });                      
-          } else if (category === "Eyeliner") {
-            $('.filtered_users').empty().append("<br /><p>No eyeliner products found.</p>");
+          } else if (category === "Eyeliner & Mascara") {
+            $('.filtered_users').empty().append("<br /><p>No eyeliner or mascara products found.</p>");
             for (var i=0; i < product_data.length; i++) {
               if (product_data[i].category_id === 4) {
                 eyeliner_products.push(product_data[i])
@@ -867,8 +867,8 @@ var initialize = function () {
               var recordHTML = HandlebarsTemplates.product(result);
               $('.filtered_users').append(recordHTML);  
             });                      
-          } else if (category === "Eyeliner") {
-            $('.filtered_users').empty().append("<br /><p>No eyeliner products found.</p>");
+          } else if (category === "Eyeliner & Mascara") {
+            $('.filtered_users').empty().append("<br /><p>No eyeliner or mascara products found.</p>");
             for (var i=0; i < product_data.length; i++) {
               if (product_data[i].category_id === 4) {
                 eyeliner_products.push(product_data[i]);
@@ -1191,8 +1191,8 @@ var initialize = function () {
               var recordHTML = HandlebarsTemplates.product(result);
               $('.filtered_users').append(recordHTML);  
             });                      
-          } else if (category === "Eyeliner") {
-            $('.filtered_users').empty().append("<br /><p>No eyeliner products found.</p>");
+          } else if (category === "Eyeliner & Mascara ") {
+            $('.filtered_users').empty().append("<br /><p>No eyeliner or mascara products found.</p>");
             for (var i=0; i < product_data.length; i++) {
               if (product_data[i].category_id === 4) {
                 eyeliner_products.push(product_data[i]);
