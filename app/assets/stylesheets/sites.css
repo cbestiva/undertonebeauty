@@ -257,7 +257,15 @@ img.img_container {
   .product_filter {
     margin-top: 10px;
   }
+
   #user_product_container {
     margin-left: 75px;
   }
+
+  .filtered_users {
+    height: 500px;
+    overflow-y: auto; 
+    margin-top: 10px;
+  }
+
 }
