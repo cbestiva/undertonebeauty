@@ -200,6 +200,8 @@ img.img_container {
   margin-left: auto;
   margin-right: auto;
   border: 1px solid black;
+  width: 200px;
+  height: 200px;
 }
 
 .product_container {
