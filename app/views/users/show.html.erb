@@ -52,14 +52,14 @@
             <% for product in current_user.products do %>
               <% if product.category_id == 1 %>
                 <div class="product_container">
+                  <div id="edit_button">
+                    <a href="/products/<%= product.id %>/edit">Edit</a>
+                  </div>  
                   <img class="img_container" src="<%= product.image_url(:thumb) %>" />
                   <div class="product_content">
                     <p><label>Name:</label> <%= product.name %><br />
                     <label>Review/Comment:</label> <%= product.review %></p>
-                  </div>
-                  <div id="edit_button">
-                    <a href="/products/<%= product.id %>/edit">Edit</a>
-                  </div>                  
+                  </div>               
                 </div>
               <% end %>
             <% end %>
@@ -68,14 +68,14 @@
             <% for product in current_user.products do %>
               <% if product.category_id == 2 %>
                 <div class="product_container">
+                  <div id="edit_button">
+                    <a href="/products/<%= product.id %>/edit">Edit</a>
+                  </div>                   
                   <img class="img_container" src="<%= product.image_url(:thumb) %>" />
                   <div class="product_content">
                     <p><label>Name:</label> <%= product.name %><br />
                     <label>Review/Comment:</label> <%= product.review %></p>
-                  </div>
-                  <div id="edit_button">
-                    <a href="/products/<%= product.id %>/edit">Edit</a>
-                  </div>                            
+                  </div>                           
                 </div>
               <% end %>
             <% end %>
@@ -84,14 +84,14 @@
             <% for product in current_user.products do %>
               <% if product.category_id == 3 %>
                 <div class="product_container">
+                  <div id="edit_button">
+                    <a href="/products/<%= product.id %>/edit">Edit</a>
+                  </div>                   
                   <img class="img_container" src="<%= product.image_url(:thumb) %>" />
                   <div class="product_content">
                     <p><label>Name:</label> <%= product.name %><br />
                     <label>Review/Comment:</label> <%= product.review %></p>
-                  </div>
-                  <div id="edit_button">
-                    <a href="/products/<%= product.id %>/edit">Edit</a>
-                  </div>                             
+                  </div>                            
                 </div>
               <% end %>
             <% end %>
@@ -100,14 +100,14 @@
             <% for product in current_user.products do %>
               <% if product.category_id == 4 %>
                 <div class="product_container">
+                  <div id="edit_button">
+                    <a href="/products/<%= product.id %>/edit">Edit</a>
+                  </div>                   
                   <img class="img_container" src="<%= product.image_url(:thumb) %>" />
                   <div class="product_content">
                     <p><label>Name:</label> <%= product.name %><br />
                     <label>Review/Comment:</label> <%= product.review %></p>
-                  </div>
-                  <div id="edit_button">
-                    <a href="/products/<%= product.id %>/edit">Edit</a>
-                  </div>                   
+                  </div>                  
                 </div>
               <% end %>
             <% end %>
@@ -116,14 +116,14 @@
             <% for product in current_user.products do %>
               <% if product.category_id == 5 %>
                 <div class="product_container">
+                  <div id="edit_button">
+                    <a href="/products/<%= product.id %>/edit">Edit</a>
+                  </div>                    
                   <img class="img_container" src="<%= product.image_url(:thumb) %>" />
                   <div class="product_content">
                     <p><label>Name:</label> <%= product.name %><br />
                     <label>Review/Comment:</label> <%= product.review %></p>
-                  </div>
-                  <div id="edit_button">
-                    <a href="/products/<%= product.id %>/edit">Edit</a>
-                  </div>                    
+                  </div>                  
                 </div>
               <% end %>
             <% end %>
@@ -132,14 +132,14 @@
             <% for product in current_user.products do %>
               <% if product.category_id == 6 %>
                 <div class="product_container">
+                  <div id="edit_button">
+                    <a href="/products/<%= product.id %>/edit">Edit</a>
+                  </div>                   
                   <img class="img_container" src="<%= product.image_url(:thumb) %>" />
                   <div class="product_content">
                     <p><label>Name:</label> <%= product.name %><br />
                     <label>Review/Comment:</label> <%= product.review %></p>
-                  </div>
-                  <div id="edit_button">
-                    <a href="/products/<%= product.id %>/edit">Edit</a>
-                  </div>                    
+                  </div>                   
                 </div>
               <% end %>
             <% end %>
@@ -148,14 +148,14 @@
             <% for product in current_user.products do %>
               <% if product.category_id == 7 %>
                 <div class="product_container">
+                  <div id="edit_button">
+                    <a href="/products/<%= product.id %>/edit">Edit</a>
+                  </div>                   
                   <img class="img_container" src="<%= product.image_url(:thumb) %>" />
                   <div class="product_content">
                     <p><label>Name:</label> <%= product.name %><br />
                     <label>Review/Comment:</label> <%= product.review %></p>
-                  </div>
-                  <div id="edit_button">
-                    <a href="/products/<%= product.id %>/edit">Edit</a>
-                  </div>                    
+                  </div>                   
                 </div>
               <% end %>
             <% end %>
@@ -164,16 +164,16 @@
             <% for product in current_user.products do %>
               <% if product.category_id == 8 %>
                 <div class="product_container">
+                  <div id="edit_button">
+                    <a href="/products/<%= product.id %>/edit">Edit</a>
+                  </div>                   
                   <img class="img_container" src="<%= product.image_url(:thumb) %>" />
                   <div class="product_content">
                     <p><label>Name:</label> <%= product.name %><br />
                     <label>Review/Comment:</label> <%= product.review %></p>
                   </div>
-                  <div id="edit_button">
-                    <a href="/products/<%= product.id %>/edit">Edit</a>
                     <%#= render "products/edit_product_modal" %>
                     <!-- <a href="<%#= edit_product_path(product) %> #edit_product" data-toggle="modal" data-target="#edit_product">Edit</a> -->
-                  </div>
                 </div>
               <% end %>
             <% end %>
