@@ -21,6 +21,11 @@ group :test, :development do
   gem 'dotenv-rails'
 end
 
+group :production, :staging do
+  gem 'pg'
+  gem 'rails_12factor'
+end
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
