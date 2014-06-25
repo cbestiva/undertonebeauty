@@ -136,12 +136,16 @@ var initialize = function () {
             $(products).each(function(index, result) {
               result.username = {};
               result.avatar = {};
+              result.skintone = {};
+              result.eyecolor = {};
               // var recordHTML = HandlebarsTemplates.product(result);
               // $('.filtered_users').append(recordHTML);
               console.log(result.user_id);
               for (var j=0; j < user_data.length; j++) {
                 if (user_data[j].id === result.user_id) {
                   result.username = user_data[j].username;
+                  result.skintone = user_data[j].skintone.color;
+                  result.eyecolor = user_data[j].eyecolor.color;
                   result.avatar = user_data[j].avatar.circle_face_thumb.url;
                 }
               }
@@ -161,10 +165,14 @@ var initialize = function () {
             $(skincare_products).each(function(index, result) {
               result.username = {};
               result.avatar = {};
+              result.skintone = {};
+              result.eyecolor = {};
               console.log(result.user_id);
               for (var j=0; j < user_data.length; j++) {
                 if (user_data[j].id === result.user_id) {
                   result.username = user_data[j].username;
+                  result.skintone = user_data[j].skintone.color;
+                  result.eyecolor = user_data[j].eyecolor.color;
                   result.avatar = user_data[j].avatar.circle_face_thumb.url;
                 }
               }
@@ -184,10 +192,14 @@ var initialize = function () {
             $(concealer_products).each(function(index, result) {
               result.username = {};
               result.avatar = {};
+              result.skintone = {};
+              result.eyecolor = {};
               console.log(result.user_id);
               for (var j=0; j < user_data.length; j++) {
                 if (user_data[j].id === result.user_id) {
                   result.username = user_data[j].username;
+                  result.skintone = user_data[j].skintone.color;
+                  result.eyecolor = user_data[j].eyecolor.color;
                   result.avatar = user_data[j].avatar.circle_face_thumb.url;
                 }
               }
@@ -207,10 +219,14 @@ var initialize = function () {
             $(foundation_products).each(function(index, result) {
               result.username = {};
               result.avatar = {};
+              result.skintone = {};
+              result.eyecolor = {};
               console.log(result.user_id);
               for (var j=0; j < user_data.length; j++) {
                 if (user_data[j].id === result.user_id) {
                   result.username = user_data[j].username;
+                  result.skintone = user_data[j].skintone.color;
+                  result.eyecolor = user_data[j].eyecolor.color;
                   result.avatar = user_data[j].avatar.circle_face_thumb.url;
                 }
               }
@@ -230,10 +246,14 @@ var initialize = function () {
             $(eyeliner_products).each(function(index, result) {
               result.username = {};
               result.avatar = {};
+              result.skintone = {};
+              result.eyecolor = {};
               console.log(result.user_id);
               for (var j=0; j < user_data.length; j++) {
                 if (user_data[j].id === result.user_id) {
                   result.username = user_data[j].username;
+                  result.skintone = user_data[j].skintone.color;
+                  result.eyecolor = user_data[j].eyecolor.color;
                   result.avatar = user_data[j].avatar.circle_face_thumb.url;
                 }
               }
@@ -253,10 +273,14 @@ var initialize = function () {
             $(eyeshadow_products).each(function(index, result) {
               result.username = {};
               result.avatar = {};
+              result.skintone = {};
+              result.eyecolor = {};
               console.log(result.user_id);
               for (var j=0; j < user_data.length; j++) {
                 if (user_data[j].id === result.user_id) {
                   result.username = user_data[j].username;
+                  result.skintone = user_data[j].skintone.color;
+                  result.eyecolor = user_data[j].eyecolor.color;
                   result.avatar = user_data[j].avatar.circle_face_thumb.url;
                 }
               }
@@ -276,10 +300,14 @@ var initialize = function () {
             $(brow_products).each(function(index, result) {
               result.username = {};
               result.avatar = {};
+              result.skintone = {};
+              result.eyecolor = {};
               console.log(result.user_id);
               for (var j=0; j < user_data.length; j++) {
                 if (user_data[j].id === result.user_id) {
                   result.username = user_data[j].username;
+                  result.skintone = user_data[j].skintone.color;
+                  result.eyecolor = user_data[j].eyecolor.color;
                   result.avatar = user_data[j].avatar.circle_face_thumb.url;
                 }
               }
@@ -299,10 +327,14 @@ var initialize = function () {
             $(blush_products).each(function(index, result) {
               result.username = {};
               result.avatar = {};
+              result.skintone = {};
+              result.eyecolor = {};
               console.log(result.user_id);
               for (var j=0; j < user_data.length; j++) {
                 if (user_data[j].id === result.user_id) {
                   result.username = user_data[j].username;
+                  result.skintone = user_data[j].skintone.color;
+                  result.eyecolor = user_data[j].eyecolor.color;
                   result.avatar = user_data[j].avatar.circle_face_thumb.url;
                 }
               }
@@ -322,10 +354,14 @@ var initialize = function () {
             $(lipstick_products).each(function(index, result) {
               result.username = {};
               result.avatar = {};
+              result.skintone = {};
+              result.eyecolor = {};
               console.log(result.user_id);
               for (var j=0; j < user_data.length; j++) {
                 if (user_data[j].id === result.user_id) {
                   result.username = user_data[j].username;
+                  result.skintone = user_data[j].skintone.color;
+                  result.eyecolor = user_data[j].eyecolor.color;
                   result.avatar = user_data[j].avatar.circle_face_thumb.url;
                 }
               }
@@ -462,10 +498,14 @@ var initialize = function () {
             $(products).each(function(index, result) {
               result.username = {};
               result.avatar = {};
+              result.skintone = {};
+              result.eyecolor = {};
               console.log(result.user_id);
               for (var j=0; j < user_data.length; j++) {
                 if (user_data[j].id === result.user_id) {
                   result.username = user_data[j].username;
+                  result.skintone = user_data[j].skintone.color;
+                  result.eyecolor = user_data[j].eyecolor.color;
                   result.avatar = user_data[j].avatar.circle_face_thumb.url;
                 }
               }
@@ -485,10 +525,14 @@ var initialize = function () {
             $(skincare_products).each(function(index, result) {
               result.username = {};
               result.avatar = {};
+              result.skintone = {};
+              result.eyecolor = {};
               console.log(result.user_id);
               for (var j=0; j < user_data.length; j++) {
                 if (user_data[j].id === result.user_id) {
                   result.username = user_data[j].username;
+                  result.skintone = user_data[j].skintone.color;
+                  result.eyecolor = user_data[j].eyecolor.color;
                   result.avatar = user_data[j].avatar.circle_face_thumb.url;
                 }
               }
@@ -508,10 +552,14 @@ var initialize = function () {
             $(concealer_products).each(function(index, result) {
               result.username = {};
               result.avatar = {};
+              result.skintone = {};
+              result.eyecolor = {};
               console.log(result.user_id);
               for (var j=0; j < user_data.length; j++) {
                 if (user_data[j].id === result.user_id) {
                   result.username = user_data[j].username;
+                  result.skintone = user_data[j].skintone.color;
+                  result.eyecolor = user_data[j].eyecolor.color;
                   result.avatar = user_data[j].avatar.circle_face_thumb.url;
                 }
               }
@@ -531,10 +579,14 @@ var initialize = function () {
             $(foundation_products).each(function(index, result) {
               result.username = {};
               result.avatar = {};
+              result.skintone = {};
+              result.eyecolor = {};
               console.log(result.user_id);
               for (var j=0; j < user_data.length; j++) {
                 if (user_data[j].id === result.user_id) {
                   result.username = user_data[j].username;
+                  result.skintone = user_data[j].skintone.color;
+                  result.eyecolor = user_data[j].eyecolor.color;
                   result.avatar = user_data[j].avatar.circle_face_thumb.url;
                 }
               }
@@ -554,10 +606,14 @@ var initialize = function () {
             $(eyeliner_products).each(function(index, result) {
               result.username = {};
               result.avatar = {};
+              result.skintone = {};
+              result.eyecolor = {};
               console.log(result.user_id);
               for (var j=0; j < user_data.length; j++) {
                 if (user_data[j].id === result.user_id) {
                   result.username = user_data[j].username;
+                  result.skintone = user_data[j].skintone.color;
+                  result.eyecolor = user_data[j].eyecolor.color;
                   result.avatar = user_data[j].avatar.circle_face_thumb.url;
                 }
               }
@@ -576,10 +632,14 @@ var initialize = function () {
             $(eyeshadow_products).each(function(index, result) {
               result.username = {};
               result.avatar = {};
+              result.skintone = {};
+              result.eyecolor = {};
               console.log(result.user_id);
               for (var j=0; j < user_data.length; j++) {
                 if (user_data[j].id === result.user_id) {
                   result.username = user_data[j].username;
+                  result.skintone = user_data[j].skintone.color;
+                  result.eyecolor = user_data[j].eyecolor.color;
                   result.avatar = user_data[j].avatar.circle_face_thumb.url;
                 }
               }
@@ -599,10 +659,14 @@ var initialize = function () {
             $(brow_products).each(function(index, result) {
               result.username = {};
               result.avatar = {};
+              result.skintone = {};
+              result.eyecolor = {};
               console.log(result.user_id);
               for (var j=0; j < user_data.length; j++) {
                 if (user_data[j].id === result.user_id) {
                   result.username = user_data[j].username;
+                  result.skintone = user_data[j].skintone.color;
+                  result.eyecolor = user_data[j].eyecolor.color;
                   result.avatar = user_data[j].avatar.circle_face_thumb.url;
                 }
               }
@@ -622,10 +686,14 @@ var initialize = function () {
             $(blush_products).each(function(index, result) {
               result.username = {};
               result.avatar = {};
+              result.skintone = {};
+              result.eyecolor = {};
               console.log(result.user_id);
               for (var j=0; j < user_data.length; j++) {
                 if (user_data[j].id === result.user_id) {
                   result.username = user_data[j].username;
+                  result.skintone = user_data[j].skintone.color;
+                  result.eyecolor = user_data[j].eyecolor.color;
                   result.avatar = user_data[j].avatar.circle_face_thumb.url;
                 }
               }
@@ -645,10 +713,14 @@ var initialize = function () {
             $(lipstick_products).each(function(index, result) {
               result.username = {};
               result.avatar = {};
+              result.skintone = {};
+              result.eyecolor = {};
               console.log(result.user_id);
               for (var j=0; j < user_data.length; j++) {
                 if (user_data[j].id === result.user_id) {
                   result.username = user_data[j].username;
+                  result.skintone = user_data[j].skintone.color;
+                  result.eyecolor = user_data[j].eyecolor.color;
                   result.avatar = user_data[j].avatar.circle_face_thumb.url;
                 }
               }
@@ -785,10 +857,14 @@ var initialize = function () {
             $(products).each(function(index, result) {
               result.username = {};
               result.avatar = {};
+              result.skintone = {};
+              result.eyecolor = {};
               console.log(result.user_id);
               for (var j=0; j < user_data.length; j++) {
                 if (user_data[j].id === result.user_id) {
                   result.username = user_data[j].username;
+                  result.skintone = user_data[j].skintone.color;
+                  result.eyecolor = user_data[j].eyecolor.color;
                   result.avatar = user_data[j].avatar.circle_face_thumb.url;
                 }
               }
@@ -808,10 +884,14 @@ var initialize = function () {
             $(skincare_products).each(function(index, result) {
               result.username = {};
               result.avatar = {};
+              result.skintone = {};
+              result.eyecolor = {};
               console.log(result.user_id);
               for (var j=0; j < user_data.length; j++) {
                 if (user_data[j].id === result.user_id) {
                   result.username = user_data[j].username;
+                  result.skintone = user_data[j].skintone.color;
+                  result.eyecolor = user_data[j].eyecolor.color;
                   result.avatar = user_data[j].avatar.circle_face_thumb.url;
                 }
               }
@@ -832,10 +912,14 @@ var initialize = function () {
             $(concealer_products).each(function(index, result) {
               result.username = {};
               result.avatar = {};
+              result.skintone = {};
+              result.eyecolor = {};
               console.log(result.user_id);
               for (var j=0; j < user_data.length; j++) {
                 if (user_data[j].id === result.user_id) {
                   result.username = user_data[j].username;
+                  result.skintone = user_data[j].skintone.color;
+                  result.eyecolor = user_data[j].eyecolor.color;
                   result.avatar = user_data[j].avatar.circle_face_thumb.url;
                 }
               }
@@ -855,10 +939,14 @@ var initialize = function () {
             $(foundation_products).each(function(index, result) {
               result.username = {};
               result.avatar = {};
+              result.skintone = {};
+              result.eyecolor = {};
               console.log(result.user_id);
               for (var j=0; j < user_data.length; j++) {
                 if (user_data[j].id === result.user_id) {
                   result.username = user_data[j].username;
+                  result.skintone = user_data[j].skintone.color;
+                  result.eyecolor = user_data[j].eyecolor.color;
                   result.avatar = user_data[j].avatar.circle_face_thumb.url;
                 }
               }
@@ -878,10 +966,14 @@ var initialize = function () {
             $(eyeliner_products).each(function(index, result) {
               result.username = {};
               result.avatar = {};
+              result.skintone = {};
+              result.eyecolor = {};
               console.log(result.user_id);
               for (var j=0; j < user_data.length; j++) {
                 if (user_data[j].id === result.user_id) {
                   result.username = user_data[j].username;
+                  result.skintone = user_data[j].skintone.color;
+                  result.eyecolor = user_data[j].eyecolor.color;
                   result.avatar = user_data[j].avatar.circle_face_thumb.url;
                 }
               }
@@ -901,10 +993,14 @@ var initialize = function () {
             $(eyeshadow_products).each(function(index, result) {
               result.username = {};
               result.avatar = {};
+              result.skintone = {};
+              result.eyecolor = {};
               console.log(result.user_id);
               for (var j=0; j < user_data.length; j++) {
                 if (user_data[j].id === result.user_id) {
                   result.username = user_data[j].username;
+                  result.skintone = user_data[j].skintone.color;
+                  result.eyecolor = user_data[j].eyecolor.color;
                   result.avatar = user_data[j].avatar.circle_face_thumb.url;
                 }
               }
@@ -924,10 +1020,14 @@ var initialize = function () {
             $(brow_products).each(function(index, result) {
               result.username = {};
               result.avatar = {};
+              result.skintone = {};
+              result.eyecolor = {};
               console.log(result.user_id);
               for (var j=0; j < user_data.length; j++) {
                 if (user_data[j].id === result.user_id) {
                   result.username = user_data[j].username;
+                  result.skintone = user_data[j].skintone.color;
+                  result.eyecolor = user_data[j].eyecolor.color;
                   result.avatar = user_data[j].avatar.circle_face_thumb.url;
                 }
               }
@@ -947,10 +1047,14 @@ var initialize = function () {
             $(blush_products).each(function(index, result) {
               result.username = {};
               result.avatar = {};
+              result.skintone = {};
+              result.eyecolor = {};
               console.log(result.user_id);
               for (var j=0; j < user_data.length; j++) {
                 if (user_data[j].id === result.user_id) {
                   result.username = user_data[j].username;
+                  result.skintone = user_data[j].skintone.color;
+                  result.eyecolor = user_data[j].eyecolor.color;
                   result.avatar = user_data[j].avatar.circle_face_thumb.url;
                 }
               }
@@ -970,10 +1074,14 @@ var initialize = function () {
             $(lipstick_products).each(function(index, result) {
               result.username = {};
               result.avatar = {};
+              result.skintone = {};
+              result.eyecolor = {};
               console.log(result.user_id);
               for (var j=0; j < user_data.length; j++) {
                 if (user_data[j].id === result.user_id) {
                   result.username = user_data[j].username;
+                  result.skintone = user_data[j].skintone.color;
+                  result.eyecolor = user_data[j].eyecolor.color;
                   result.avatar = user_data[j].avatar.circle_face_thumb.url;
                 }
               }
@@ -1109,10 +1217,14 @@ var initialize = function () {
             $(products).each(function(index, result) {
               result.username = {};
               result.avatar = {};
+              result.skintone = {};
+              result.eyecolor = {};
               console.log(result.user_id);
               for (var j=0; j < user_data.length; j++) {
                 if (user_data[j].id === result.user_id) {
                   result.username = user_data[j].username;
+                  result.skintone = user_data[j].skintone.color;
+                  result.eyecolor = user_data[j].eyecolor.color;
                   result.avatar = user_data[j].avatar.circle_face_thumb.url;
                 }
               }
@@ -1133,10 +1245,14 @@ var initialize = function () {
             $(skincare_products).each(function(index, result) {
               result.username = {};
               result.avatar = {};
+              result.skintone = {};
+              result.eyecolor = {};
               console.log(result.user_id);
               for (var j=0; j < user_data.length; j++) {
                 if (user_data[j].id === result.user_id) {
                   result.username = user_data[j].username;
+                  result.skintone = user_data[j].skintone.color;
+                  result.eyecolor = user_data[j].eyecolor.color;
                   result.avatar = user_data[j].avatar.circle_face_thumb.url;
                 }
               }
@@ -1156,10 +1272,14 @@ var initialize = function () {
             $(concealer_products).each(function(index, result) {
               result.username = {};
               result.avatar = {};
+              result.skintone = {};
+              result.eyecolor = {};
               console.log(result.user_id);
               for (var j=0; j < user_data.length; j++) {
                 if (user_data[j].id === result.user_id) {
                   result.username = user_data[j].username;
+                  result.skintone = user_data[j].skintone.color;
+                  result.eyecolor = user_data[j].eyecolor.color;
                   result.avatar = user_data[j].avatar.circle_face_thumb.url;
                 }
               }
@@ -1179,10 +1299,14 @@ var initialize = function () {
             $(foundation_products).each(function(index, result) {
               result.username = {};
               result.avatar = {};
+              skintone = {};
+              eyecolor = {};
               console.log(result.user_id);
               for (var j=0; j < user_data.length; j++) {
                 if (user_data[j].id === result.user_id) {
                   result.username = user_data[j].username;
+                  result.skintone = user_data[j].skintone.color;
+                  result.eyecolor = user_data[j].eyecolor.color;
                   result.avatar = user_data[j].avatar.circle_face_thumb.url;
                 }
               }
@@ -1202,10 +1326,13 @@ var initialize = function () {
             $(eyeliner_products).each(function(index, result) {
               result.username = {};
               result.avatar = {};
+              result.skintone = {};
               console.log(result.user_id);
               for (var j=0; j < user_data.length; j++) {
                 if (user_data[j].id === result.user_id) {
                   result.username = user_data[j].username;
+                  result.skintone = user_data[j].skintone.color;
+                  result.eyecolor = user_data[j].eyecolor.color;
                   result.avatar = user_data[j].avatar.circle_face_thumb.url;
                 }
               }
@@ -1225,10 +1352,14 @@ var initialize = function () {
             $(eyeshadow_products).each(function(index, result) {
               result.username = {};
               result.avatar = {};
+              result.skintone = {};
+              result.eyecolor = {};
               console.log(result.user_id);
               for (var j=0; j < user_data.length; j++) {
                 if (user_data[j].id === result.user_id) {
                   result.username = user_data[j].username;
+                  result.skintone = user_data[j].skintone.color;
+                  result.eyecolor = user_data[j].eyecolor.color;
                   result.avatar = user_data[j].avatar.circle_face_thumb.url;
                 }
               }
@@ -1248,10 +1379,14 @@ var initialize = function () {
             $(brow_products).each(function(index, result) {
               result.username = {};
               result.avatar = {};
+              result.skintone = {};
+              result.eyecolor = {};
               console.log(result.user_id);
               for (var j=0; j < user_data.length; j++) {
                 if (user_data[j].id === result.user_id) {
                   result.username = user_data[j].username;
+                  result.skintone = user_data[j].skintone.color;
+                  result.eyecolor = user_data[j].eyecolor.color;
                   result.avatar = user_data[j].avatar.circle_face_thumb.url;
                 }
               }
@@ -1271,10 +1406,14 @@ var initialize = function () {
             $(blush_products).each(function(index, result) {
               result.username = {};
               result.avatar = {};
+              result.skintone = {};
+              result.eyecolor = {};
               console.log(result.user_id);
               for (var j=0; j < user_data.length; j++) {
                 if (user_data[j].id === result.user_id) {
                   result.username = user_data[j].username;
+                  result.skintone = user_data[j].skintone.color;
+                  result.eyecolor = user_data[j].eyecolor.color;
                   result.avatar = user_data[j].avatar.circle_face_thumb.url;
                 }
               }
@@ -1294,10 +1433,14 @@ var initialize = function () {
             $(lipstick_products).each(function(index, result) {
               result.username = {};
               result.avatar = {};
+              result.skintone = {};
+              result.eyecolor = {};
               console.log(result.user_id);
               for (var j=0; j < user_data.length; j++) {
                 if (user_data[j].id === result.user_id) {
                   result.username = user_data[j].username;
+                  result.skintone = user_data[j].skintone.color;
+                  result.eyecolor = user_data[j].eyecolor.color;
                   result.avatar = user_data[j].avatar.circle_face_thumb.url;
                 }
               }
